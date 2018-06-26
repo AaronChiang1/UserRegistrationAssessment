@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ac_ma.userregistrationassessment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".startRegistration"
+            android:label="@string/title_activity_start_registration"
+            android:parentActivityName=".MainPage" />
+        <activity android:name=".createPassword" />
+        <activity android:name=".dataCollector" />
+        <activity android:name=".nameZipcodeHeight" />
+        <activity android:name=".genderDOB" />
+        <activity android:name=".interestAge" />
+        <activity android:name=".raceReligion" />
+        <activity android:name=".profilePicture" />
+        <activity android:name=".summary" />
+    </application>
+
+</manifest>
